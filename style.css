@@ -118,7 +118,8 @@ navbar__link:hover {
         margin: 0;
         width: 100%;
         position: absolute;
-        
+        top: -1000px;
+        opacity: 0;
         transition: all 0.5 ease;
         height: 50vh;
         z-index: -1;
@@ -178,7 +179,7 @@ navbar__link:hover {
         margin: 0;
     }
 
-    .navbar__toggle . bar {
+    .navbar__toggle .bar {
         display: block;
         cursor: pointer;
     }
