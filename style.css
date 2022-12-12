@@ -29,7 +29,7 @@
 }
 
 #navbar__logo {
-    background-color: #ff8177;
+    background-color: #3da7ee;
     background-image: linear-gradient(to top, #e9e79473 0%, #ffb189, 100%);
     background-size: 100%;
     -webkit-background-clip: text;
@@ -87,17 +87,17 @@
     border: none;
     outline: none;
     border-radius: 4px;
-    background: #f77062;
+    background: #3da7ee;
     color: #fff;
 }
 
 .button:hover {
-    background: #4837ff;
+    background: #f77062;
     transition: all 0.3 ease;
 }
 
 navbar__link:hover {
-    color: #f77062;
+    color: #4d95e7;
     transition: all 0.3 ease;
 }
 
@@ -118,11 +118,11 @@ navbar__link:hover {
         margin: 0;
         width: 100%;
         position: absolute;
-        top: -1000px;
-        opacity: 0;
+        
         transition: all 0.5 ease;
         height: 50vh;
         z-index: -1;
+        background: #131313 ;
     }
 
     .navbar__menu.active {
@@ -152,8 +152,45 @@ navbar__link:hover {
     }
 
     .navbar__links {
-        color: 
         text-align: center;
         padding: 2rem;
         width: 100%;
+        display: table;
+    }
+
+    #mobile-menu {
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        transform: translate(5%, 20%);
+    }
+
+    .navbar__btn {
+        padding-bottom: 2rem;
+    }
+
+    .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        height: 80px;
+        margin: 0;
+    }
+
+    .navbar__toggle . bar {
+        display: block;
+        cursor: pointer;
+    }
+
+    #mobile-menu.is-active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    #mobile-menu.is-active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    #mobile-menu.is-active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
     }
